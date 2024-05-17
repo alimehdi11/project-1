@@ -5,8 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 1</title>
   <link rel="stylesheet" href="./style.css">
+  <!--font awesome cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <!-- <nav>
+    <a href="#">
+      <img src="https://preview.colorlib.com/theme/aroma/img/logo.png" alt="">
+    </a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="right-nav">
+      <div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <button class="buy">Buy Now</button>
+    </div>
+  </nav> -->
+  <nav>
+    <a hre="#">
+      <img src="https://preview.colorlib.com/theme/aroma/img/logo.png" alt="">
+    </a>
+    <div class="bars">
+      <span class="bar bar1"></span>
+      <span class="bar bar2"></span>
+      <span class="bar bar3"></span>
+    </div>
+    <div class="responsive-nav">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="right">
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping cart">
+            <div class="num">3</div>
+          </i>
+        </div>
+        <button class="buy">Buy Now</button>
+      </div>
+    </div>
+  </nav>
+    <script>
+      let bars = document.querySelector(".bars");
+      
+      let responsive = document.querySelector(".responsive-nav");
+      bars.addEventListener("click",()=>{
+        responsive.classList.toggle("active");
+        bars.children[0].classList.toggle("active");
+        bars.children[1].classList.toggle("active");
+        bars.children[2].classList.toggle("active");
+      }) 
+    </script>   
   
 </body>
 </html>
+
