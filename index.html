@@ -7,6 +7,34 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <nav>
+    <a hre="#">
+      <img src="https://preview.colorlib.com/theme/aroma/img/logo.png" alt="">
+    </a>
+    <div class="bars">
+      <span class="bar bar1"></span>
+      <span class="bar bar2"></span>
+      <span class="bar bar3"></span>
+    </div>
+    <div class="responsive-nav">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="right">
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping cart">
+            <div class="num">3</div>
+          </i>
+        </div>
+        <button class="buy">Buy Now</button>
+      </div>
+    </div>
+  </nav>
   <div class="hero-section">
     <div class="color">
     <div class="img"><img src="https://preview.colorlib.com/theme/aroma/img/home/hero-banner.png" alt=""></div>
@@ -18,5 +46,16 @@
         <a class="button" href="#">Browse Now</a>
     </div> 
    </div>
+   <script>
+    let bars = document.querySelector(".bars");
+    
+    let responsive = document.querySelector(".responsive-nav");
+    bars.addEventListener("click",()=>{
+      responsive.classList.toggle("active");
+      bars.children[0].classList.toggle("active");
+      bars.children[1].classList.toggle("active");
+      bars.children[2].classList.toggle("active");
+    }) 
+  </script> 
 </body>
 </html>
