@@ -1,10 +1,11 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: "Roboto", sans-serif;
+    color: black;
+    font-family: sans-serif;
     letter-spacing: 0px;
 }
 
@@ -221,4 +222,109 @@
     }
 
 
+   
+    }
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 5vw;
+  flex-wrap: wrap;
+}
+.responsive-nav{
+transition: all .5s;
+  height: 0;
+  overflow: hidden;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 15%;
+  padding-inline: 5vw;
+}
+.responsive-nav.active{
+  padding-bottom: 10px;
+  height: 300px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+.right{
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+}
+.buy{
+    padding: 13px 40px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+.cart{
+    position: relative;
+}
+.num{
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(0, 60, 255);
+  color: white;
+  border-radius: 50%;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bars{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+  }
+.bar{
+  height: 3px;
+  background-color: rgb(0, 64, 255);
+  width: 28px;
+  transition: all .5s;
+}
+.bar1.active{
+  transform: rotate(-45deg) translate(8px, 16px);
+}
+.bar2.active{
+  opacity: 0;
+}
+.bar3.active{
+  transform: rotate(45deg) translate(4px,-19px); 
+}
+
+@media (min-width:992px) {
+  .responsive-nav{
+width: auto;
+height: auto;
+flex-direction: row;
+align-items: center;
+position:static;
+padding-bottom: 0;
+}
+ul{
+  flex-direction: row;
+  margin: auto;
+}
+.bars{
+  display: none;
+} 
 }
