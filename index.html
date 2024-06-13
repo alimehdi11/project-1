@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 1</title>
   <link rel="stylesheet" href="./style.css">
-  <!--font awesome cdn-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <nav>
@@ -37,18 +35,27 @@
       </div>
     </div>
   </nav>
-    <script>
-      let bars = document.querySelector(".bars");
-      
-      let responsive = document.querySelector(".responsive-nav");
-      bars.addEventListener("click",()=>{
-        responsive.classList.toggle("active");
-        bars.children[0].classList.toggle("active");
-        bars.children[1].classList.toggle("active");
-        bars.children[2].classList.toggle("active");
-      }) 
-    </script>   
-  
+  <div class="hero-section">
+    <div class="color">
+    <div class="img"><img src="https://preview.colorlib.com/theme/aroma/img/home/hero-banner.png" alt=""></div>
+    </div>
+    <div class="content">
+        <h4>Shop is fun</h4>
+        <h1>BROWSE OUR <br> PREMIUM PRODUCT</h1>
+        <p>Us which over of signs divide dominion deep fill bring they're meat beho upon own earth without morning over third. Their male dry. They are great appear whose land fly grass</p>
+        <a class="button" href="#">Browse Now</a>
+    </div> 
+   </div>
+   <script>
+    let bars = document.querySelector(".bars");
+    
+    let responsive = document.querySelector(".responsive-nav");
+    bars.addEventListener("click",()=>{
+      responsive.classList.toggle("active");
+      bars.children[0].classList.toggle("active");
+      bars.children[1].classList.toggle("active");
+      bars.children[2].classList.toggle("active");
+    }) 
+  </script> 
 </body>
 </html>
-
