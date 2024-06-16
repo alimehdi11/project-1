@@ -1,0 +1,88 @@
+
+@media screen and (min-width: 576px) {
+  .hero-section{
+    height: 63vh;
+  }
+  .hero-part1{
+    width: 80%;
+  }
+.hero-part1 img{
+  width: 78%;
+  display: block;
+} 
+.hero-part1 .herobgBox{
+width: 50%;
+}
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section{
+    height: 73vh;
+  }
+  .hero-part1 img{
+    width: 88%;
+  }
+  .btn{
+    padding: 15px 40px;
+    }
+  .latest-card {
+    flex-basis: 300px;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .responsive-nav {
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    padding-bottom: 0;
+  }
+  .menu.vStack {
+    flex-direction: row;
+    margin: auto;
+  }
+  .bars {
+    display: none;
+  }
+  .responsive-nav.active {
+    padding-bottom: 0px;
+    height: auto;
+  }
+  .hero-section{
+    height: 85vh;
+  }
+  .hero-part1 img{
+    height: 88%;
+  }
+  .heroHead{
+    font-size: 45px
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav{
+    padding-inline:13vw;
+  }
+  .container {
+    width: 72vw;
+  }
+  .hero-part1 .herobgBox{
+    width: 80%;
+    }
+    .hero-part1 img{
+      width: 70%;
+    }  
+.animCard {
+max-width: 100%;
+}
+ .hero-part2{
+  padding-inline: 5vw;
+ }
+ .heroHead span{
+  display: block;
+ }
+
+}

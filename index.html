@@ -5,49 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 1</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
   <!-- font awsome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <nav>
+  <!-- header -->
+  <header>
+    <nav class="hStack iCenter">
     <a hre="#">
       <img src="https://preview.colorlib.com/theme/aroma/img/logo.png" alt="">
     </a>
-    <div class="bars">
-      <span class="bar bar1"></span>
-      <span class="bar bar2"></span>
-      <span class="bar bar3"></span>
+    <div class="bars vStack absolute cursor-pointer">
+      <span class="bar  transition bar1 bg1"></span>
+      <span class="bar  transition bar2 bg1"></span>
+      <span class="bar  transition bar3 bg1"></span>
     </div>
-    <div class="responsive-nav">
-      <ul>
+    <div class="responsive-nav zIndex bg2 absolute wFull vStack gap2 transition">
+      <ul class="vStack gap3 menu">
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">Shop</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Pages</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <div class="right">
+      <div class="right d-flex iCenter">
         <div>
           <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-cart-shopping cart">
-            <div class="num">3</div>
+          <i class="fa-solid fa-cart-shopping relative">
+            <small class="num d-flex jCenter iCenter absolute bg1">3</small>
           </i>
         </div>
-        <button class="buy">Buy Now</button>
+        <button class="btn btn1 transition">Buy Now</button>
       </div>
     </div>
   </nav>
-  <div class="hero-section">
-    <div class="color">
-    <div class="img"><img src="https://preview.colorlib.com/theme/aroma/img/home/hero-banner.png" alt=""></div>
+</header>
+  <!-- header -->
+<!-- hero section -->
+<div class="hero-section d-flex bg2 iCenter gap1 ">
+  <div class="hero-part1 relative">
+      <div class="herobgBox bg1"></div>
+      <img class="absolute zIndex" src="https://preview.colorlib.com/theme/aroma/img/home/hero-banner.png" alt="">
     </div>
-    <div class="content">
-        <h4>Shop is fun</h4>
-        <h1>BROWSE OUR <br> PREMIUM PRODUCT</h1>
-        <p>Us which over of signs divide dominion deep fill bring they're meat beho upon own earth without morning over third. Their male dry. They are great appear whose land fly grass</p>
-        <a class="button" href="#">Browse Now</a>
+    <div class="hero-part2 vStack ">
+        <p class="gray" style="font-size: 30px;">Shop is fun</p>
+        <h1 class="heroHead">BROWSE OUR <span>PREMIUM PRODUCT</span></h1>
+        <p class="gray">Us which over of signs divide dominion deep fill bring they're meat beho upon own earth without morning over third. Their male dry. They are great appear whose land fly grass</p>
+        <a class="btn btn2 transition" href="#">Browse Now</a>
     </div> 
-   </div>
+  </div>
+  <!-- hero section -->
+
+  <!-- animCards -->
+  <div class="animCards hStack jCenter gap1">
+    <div class="animCard relative">
+      <img
+        src="https://preview.colorlib.com/theme/aroma/img/home/hero-slide1.png"
+        alt=""
+      />
+
+      <div class="hidden-box absolute transition">
+        <a href="#">
+          <div>
+            <h2>Wireless Headphone</h2>
+            <p>Accessories item</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="animCard relative">
+      <img
+        src="https://preview.colorlib.com/theme/aroma/img/home/hero-slide2.png"
+        alt=""
+      />
+
+      <div class="hidden-box absolute transition">
+        <a href="#">
+          <div>
+            <h2>Wireless Headphone</h2>
+            <p>Accessories item</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="animCard relative">
+      <img
+        src="https://preview.colorlib.com/theme/aroma/img/home/hero-slide3.png"
+        alt=""
+      />
+      <div class="hidden-box absolute transition">
+        <a href="#">
+            <h2>Wireless Headphone</h2>
+            <p>Accessories item</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- animCards -->
    <!-- latest cards -->
    <div class="container vStack gap5">
      <div class="latest-part1">
@@ -72,7 +129,7 @@
               </a>
             </div>
              <div class="latest-card vStack cursor-pointer">
-              <img src="https://preview.colorlib.com/theme/aroma/img/blog/blog1.png" alt="">
+              <img src="https://preview.colorlib.com/theme/aroma/img/blog/blog2.png" alt="">
               <div class="hStack">
                 <p class="gray">By Admin</p>
                 <p class="gray">
@@ -88,7 +145,7 @@
               </a>
             </div>
              <div class="latest-card vStack cursor-pointer">
-              <img src="https://preview.colorlib.com/theme/aroma/img/blog/blog1.png" alt="">
+              <img src="https://preview.colorlib.com/theme/aroma/img/blog/blog3.png" alt="">
               <div class="hStack">
                 <p class="gray">By Admin</p>
                 <p class="gray">
