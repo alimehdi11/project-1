@@ -234,7 +234,9 @@ nav {
 /* latest card css */
 
 /* anim Cards css */
-
+.animCards{
+  margin-block:20px;
+}
 .animCard {
   flex: 1 1 300px;
   max-width: 400px;
