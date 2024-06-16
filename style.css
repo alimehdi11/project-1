@@ -235,7 +235,7 @@ nav {
 
 /* anim Cards css */
 .animCards{
-  margin-block:20px;
+  margin:20px 0px;
 }
 .animCard {
   flex: 1 1 300px;
