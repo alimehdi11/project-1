@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 1</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <nav>
@@ -46,9 +47,25 @@
         <a class="button" href="#">Browse Now</a>
     </div> 
    </div>
+
+
+   <div class="container">
+      <h4 class="gray">Popular Item in the market</h4>
+      <h1 class="Trade">Trending <span>Product</span></h1>
+      <div class="card_container" id="cardList1"></div>
+   </div>
+
+   <div class="container">
+      <h4 class="gray">Popular Item in the market</h4>
+      <h1 class="Trade">Best <span>Sellers</span></h1>
+      <div class="card_container" id="cardList2"></div>
+   </div>
+
+
    <script>
     let bars = document.querySelector(".bars");
-    
+    let card_container = document.querySelector("#cardList1")
+    let card_container2 = document.querySelector("#cardList2")
     let responsive = document.querySelector(".responsive-nav");
     bars.addEventListener("click",()=>{
       responsive.classList.toggle("active");
@@ -56,6 +73,84 @@
       bars.children[1].classList.toggle("active");
       bars.children[2].classList.toggle("active");
     }) 
+    let tCards = [
+      {
+        img:"https://preview.colorlib.com/theme/aroma/img/product/product1.png",
+        head1:"Accessories",
+        head2:"Quartz Belt Watch",
+        head3:"$150.00"
+      },
+      {
+        img:"https://preview.colorlib.com/theme/aroma/img/product/product2.png",
+        head1:"Beauty",
+        head2:"Women Freshwash",
+        head3:"$150.00"
+      },
+      {
+        img:"https://preview.colorlib.com/theme/aroma/img/product/product3.png",
+        head1:"Decor",
+        head2:"Room Flash Light",
+        head3:"$150.00"
+      },
+      {
+        img:"https://preview.colorlib.com/theme/aroma/img/product/product4.png",
+        head1:"Decor",
+        head2:"Room Flash Light",
+        head3:"$150.00"
+      },
+      {
+        img:"https://preview.colorlib.com/theme/aroma/img/product/product5.png",
+        head1:"Accessories",
+        head2:"Man Office Bag",
+        head3:"$150.00"
+      },
+      {
+        img:"https://preview.colorlib.com/theme/aroma/img/product/product6.png",
+        head1:"Kids Toy",
+        head2:"Charging Car",
+        head3:"$150.00"
+      },
+      {
+        img:"https://preview.colorlib.com/theme/aroma/img/product/product7.png",
+        head1:"Accessories",
+        head2:"Blutooth Speaker",
+        head3:"$150.00"
+      },
+      {
+        img:"https://preview.colorlib.com/theme/aroma/img/product/product8.png",
+        head1:"Kids Toy",
+        head2:"Charging Car",
+        head3:"$150.00"
+      },
+    ]
+   const tCards2 = tCards.filter((item,idx)=>idx<4)
+
+const renderCards = (arr,container) =>{
+  arr.forEach((elem)=>{
+    container.innerHTML+=`
+    <div class="bx">
+          <div class="img-Box">
+            <img src="${elem.img}" alt="">
+                  <div class="tCard-icons">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+            </div>
+          <div class="Tcard-contain">
+            <h5 class="gray">${elem.head1}</h5>
+            <h3 class="center-heading">${elem.head2}</h3>
+            <h4 class="gray">${elem.head3}</h4>
+          </div>
+        </div>
+     `
+     })
+}
+
+
+renderCards(tCards,card_container);
+renderCards(tCards2,card_container2);
+
   </script> 
 </body>
 </html>
