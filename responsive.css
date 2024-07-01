@@ -85,4 +85,11 @@ max-width: 100%;
   display: block;
  }
 
+ .offer{
+  justify-content: start;
+ }
+ .offer .box0{
+  margin-left:60px;
+ }
+
 }
