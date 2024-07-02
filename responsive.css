@@ -69,6 +69,27 @@
   }
   .hero-part1 .herobgBox {
     width: 80%;
+    }
+    .hero-part1 img{
+      width: 70%;
+    }  
+.animCard {
+max-width: 100%;
+}
+ .hero-part2{
+  padding-inline: 5vw;
+ }
+ .heroHead span{
+  display: block;
+ }
+
+ .offer{
+  justify-content: start;
+ }
+ .offer .box0{
+  margin-left:60px;
+ }
+
   }
   .hero-part1 img {
     width: 70%;
@@ -82,4 +103,4 @@
   .heroHead span {
     display: block;
   }
-}
+
